@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/pokemon.js" defer></script>
+  </head>
+  <body>
+    <div class="catalog">
+      <header class="header">
+        <h1 class="header__title">Katalog <span>Pokemonów</span></span> <img class="pikachu" src="img/pokemon.svg" alt=""></h1>
+        <div class="search">
+            
+            <input type="text" id="search" class="search__input" placeholder="Znajdź Pokemona">
+            
+        </div>
+      </header>
+      <div class="catalog__content" id="cards">
+          <p class="catalog__info hide">Nie ma takiego Pokemona w dotychczas załadowanych</p>
+      </div>
+      <div class="loader__wraper">
+          <button class="button" id="catalog__button">Załaduj więcej</button>
+          <div class="lds-hourglass hide"></div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(21, 16, 61, 0.8);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.catalog {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgb(21, 16, 61);
+  min-height: 100vh;
+}
+
+.catalog__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  color: #f62d14;
+  font-size: 42px;
+  padding: 10px 20px;
+}
+
+.header__title span {
+  color: #fad61d;
+}
+
+.pikachu {
+  width: 50px;
+  padding-left: 10px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.search__input {
+  padding: 10px 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  border: none;
+  width: 300px;
+  border-bottom: 2px solid #f62d14;
+  background-color: rgba(21, 16, 61, 0.8);
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.search__input:focus {
+  outline: none;
+  border-bottom-color: #fad61d;
+}
+
+.card__header {
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.card__number {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin-top: 5px;
+}
+
+.card__name {
+  margin-bottom: 5px;
+}
+
+.card__img {
+  width: 250px;
+}
+.card__desc {
+  margin-top: 5px;
+}
+
+.card__desc span {
+  font-weight: bold;
+}
+
+.catalog__info {
+  font-size: 24px;
+  margin: 50px 10px;
+}
+
+#catalog__button {
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: rgba(21, 16, 61, 0.8);
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.loader__wraper {
+  position: relative;
+  width: 100%;
+}
+
+#catalog__button:hover {
+  border: 3px solid rgb(21, 16, 61);
+  background-color: white;
+  color: rgba(21, 16, 61, 0.8);
+}
+
+/* loader */
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lds-hourglass:after {
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 18px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.hide {
+  display: none;
+}
